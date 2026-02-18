@@ -102,3 +102,67 @@ body {
     opacity: 0.85;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 380px;
+        padding: 25px;
+        border-radius: 14px;
+    }
+
+    .login {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .input-group label {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .hint {
+        font-size: 15px;
+    }
+}
+
+/* TELAS MUITO PEQUENAS */
+@media (max-width: 400px) {
+
+    .login-container {
+        padding: 18px;
+    }
+
+    .login {
+        font-size: 26px;
+    }
+
+    .input-group label {
+        font-size: 16px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+    }
+
+    .hint {
+        font-size: 13px;
+    }
+}
