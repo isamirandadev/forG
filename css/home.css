@@ -229,88 +229,58 @@ body {
     background: var(--roxo-escuro);
 }
 
+/* ===== TIMELINE ===== */
+/* ===== TIMELINE ===== */
 .timeline {
-  width: 100%;
-  padding: 80px 0;
-  position: relative;
+    width: 100%;
+    padding: 60px 20px;
 }
 
 .timeline-title {
-  text-align: center;
-  font-size: 38px;
-  margin-bottom: 60px;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
 }
 
-/* linha central */
-.timeline-container {
-  position: relative;
-  width: 80%;
-  margin: auto;
-}
-
-/* cada bloco */
+/* cada card */
 .timeline-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 80px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
 }
 
-/* alterna lados automaticamente */
-.timeline-item:nth-child(even) {
-  flex-direction: row-reverse;
+.timeline-item:hover {
+    transform: translateY(-6px);
 }
 
+/* imagem */
+.timeline-img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* texto */
 .timeline-text {
-  width: 40%;
+    padding: 14px;
 }
 
 .timeline-text h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 6px;
 }
 
 .timeline-text p {
-  opacity: 0.8;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
-.timeline-img {
-  width: 40%;
-}
 
-.timeline-img img {
-  width: 100%;
-  border-radius: 15px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* responsivo */
-@media (max-width: 900px) {
-  .timeline-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .timeline-item:nth-child(even) {
-    flex-direction: column;
-  }
-
-  .timeline-text{
-    width: 100%;
-  }
-
-  .timeline-img {
-    width: 60%;
-  }
-
-  .timeline-container::before {
-    left: 10px;
-  }
-}
 
 .love-text {
-    max-width: 800px;
+    max-width: 70%;
     margin: 100px auto;
     padding: 40px;
     text-align: center;
