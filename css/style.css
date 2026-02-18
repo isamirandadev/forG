@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background-image: url("../imagens/vangogh.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container do login */
+.login-container {
+    background: linear-gradient(135deg, #0d1a3f   , #1a4284 );
+    padding: 40px;
+    width: 580px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Título */
+.login {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+/* Grupo de input */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #F5F3EE;
+    text-shadow: 0 2px 6px rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Placeholder */
+.input-group input::placeholder {
+    color: #cccccc;
+}
+
+/* Foco no input */
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0d1a3f   , #1a4284);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover no botão */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(106, 90, 205, 0.4);
+}
+
+.hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 23px;
+    color: #F5F3EE;
+    text-shadow: 0 2px 1px rgb(0, 0, 0);
+    opacity: 0.85;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
